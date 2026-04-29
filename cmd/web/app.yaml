@@ -2,13 +2,13 @@ app:
   version: "1.0.0"
   env: test
 server:
-  port: 8301
+  port: 8102
 mysql:
   host: "127.0.0.1"
   port: 3306
   username: "root"
   password: ""
-  dbname: "test"
+  dbname: "ai_test"
 
 ai_tools:
   enabled: true

@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch ai-case-be",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/cmd/web",
+      "cwd": "${workspaceFolder}/cmd/web",
+      "args": [],
+      "env": {
+        "GOTOOLCHAIN": "go1.25.0",
+        "GOROOT": "/Users/fanpaopao/.gvm/pkgsets/go1.24.4/global/pkg/mod/golang.org/toolchain@v0.0.1-go1.25.0.darwin-amd64",
+        "PATH": "/Users/fanpaopao/.gvm/pkgsets/go1.24.4/global/pkg/mod/golang.org/toolchain@v0.0.1-go1.25.0.darwin-amd64/bin:${env:PATH}"
+      },
+      "showLog": true
+    }
+  ]
+}
