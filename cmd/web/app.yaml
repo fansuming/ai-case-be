@@ -1,0 +1,45 @@
+app:
+  version: "1.0.0"
+  env: test
+server:
+  port: 8301
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  username: "root"
+  password: ""
+  dbname: "test"
+
+ai_tools:
+  enabled: true
+  allow_write: true
+  allow_all_permissions: true
+  audit_enabled: true
+
+claude:
+  api_key: "sk-rP6Rtc12jebX_4YgMkVZ_Q"
+  model: "us.anthropic.claude-sonnet-4-6"
+  base_url: "https://d3op0m6ej5uzjt.cloudfront.net/v1/chat/completions"
+
+deepseek:
+  # 推荐填环境变量名，避免把真实密钥写进仓库。
+  # env_key: "DEEPSEEK_API_KEY"
+  env_key: "sk-94599474da2c4c4a8dac44f4c4b9b4d8"
+  model: "deepseek-chat"
+  # DeepSeek 文档支持 https://api.deepseek.com 和 https://api.deepseek.com/v1 两种 base_url 写法。
+  base_url: "https://api.deepseek.com"
+
+codex:
+  # 推荐填环境变量名，避免把真实密钥写进仓库。
+  # env_key: "AZURE_OPENAI_API_KEY"
+  env_key: "5XOTS7W5x0sbOGJG4fQkFKN9t09D4BeFVBaOtshVy39GlXho9sbRJQQJ99CCACHYHv6XJ3w3AAABACOGyySJ"
+  # model: "gpt-5.4"
+  model: "gpt-5.4"
+  base_url: "https://rn-software-devops-eastus2.openai.azure.com/openai"
+  api_version: "2025-04-01-preview"
+  auth_type: "api-key"
+  wire_api: "responses"
+  model_reasoning_effort: "medium"
+  service_tier: "fast"
+
+
