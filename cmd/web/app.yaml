@@ -17,14 +17,14 @@ ai_tools:
   audit_enabled: true
 
 claude:
-  api_key: "sk-rP6Rtc12jebX_4YgMkVZ_Q"
+  api_key: ""
   model: "us.anthropic.claude-sonnet-4-6"
   base_url: "https://d3op0m6ej5uzjt.cloudfront.net/v1/chat/completions"
 
 deepseek:
   # 推荐填环境变量名，避免把真实密钥写进仓库。
   # env_key: "DEEPSEEK_API_KEY"
-  env_key: "sk-94599474da2c4c4a8dac44f4c4b9b4d8"
+  env_key: ""
   model: "deepseek-chat"
   # DeepSeek 文档支持 https://api.deepseek.com 和 https://api.deepseek.com/v1 两种 base_url 写法。
   base_url: "https://api.deepseek.com"
@@ -32,7 +32,7 @@ deepseek:
 codex:
   # 推荐填环境变量名，避免把真实密钥写进仓库。
   # env_key: "AZURE_OPENAI_API_KEY"
-  env_key: "5XOTS7W5x0sbOGJG4fQkFKN9t09D4BeFVBaOtshVy39GlXho9sbRJQQJ99CCACHYHv6XJ3w3AAABACOGyySJ"
+  env_key: ""
   # model: "gpt-5.4"
   model: "gpt-5.4"
   base_url: "https://rn-software-devops-eastus2.openai.azure.com/openai"
